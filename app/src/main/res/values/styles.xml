@@ -7,4 +7,15 @@
         <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
         <!-- Otros atributos de estilo que desees personalizar -->
     </style>
+    <!-- Tema Claro -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Ajustes específicos del tema claro -->
+    </style>
+
+    <!-- Tema Oscuro -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/darkColorFondo</item>
+        <!-- Ajustes específicos del tema oscuro -->
+    </style>
+
 </resources>

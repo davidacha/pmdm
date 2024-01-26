@@ -22,7 +22,7 @@ import java.util.Locale;
 
 public class activity_ajustes extends AppCompatActivity {
     FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
-
+    private boolean isDarkModeEnabled=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,7 +171,13 @@ public class activity_ajustes extends AppCompatActivity {
         recreate();
     }
     private void cambiarTema(Boolean tema) {
-        recreate();
+        if (isDarkModeEnabled) {
+            setTheme(R.style.AppTheme_Light);
+        } else {
+            setTheme(R.style.AppTheme_Dark);
+        }
+        recreate(); // Reinicia la actividad para aplicar el nuevo tema
+        isDarkModeEnabled = !isDarkModeEnabled;
     }
     private void showToast(String string) {
         Toast.makeText(getApplicationContext(), string, Toast.LENGTH_SHORT).show();
