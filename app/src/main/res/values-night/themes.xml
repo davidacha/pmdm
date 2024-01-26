@@ -4,4 +4,5 @@
         <item name="android:windowBackground">@color/darkColorFondo</item>
 
     </style>
+    <style name="Theme.Notas" parent="Base.Theme.Notas" />
 </resources>

@@ -3,7 +3,7 @@ package bd;
 public class BDUser {
     private String nombre;
     private String password;
-    private BDHorario horario;
+    private BDAgenda bdAgenda;
 
     public String getNombre() {
         return nombre;
@@ -21,11 +21,11 @@ public class BDUser {
         this.password = password;
     }
 
-    public BDHorario getHorario() {
-        return horario;
+    public BDAgenda getBdAgenda() {
+        return bdAgenda;
     }
 
-    public void setHorario(BDHorario horario) {
-        this.horario = horario;
+    public void setBdAgenda(BDAgenda bdAgenda) {
+        this.bdAgenda = bdAgenda;
     }
 }
