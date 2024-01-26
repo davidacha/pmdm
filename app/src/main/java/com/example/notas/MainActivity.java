@@ -54,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
                 showChangePassDialog();
             }
         });
+        Button buttonDirecto = findViewById(R.id.buttonDirecto);
+        buttonDirecto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                metodos.cambiarActividad(MainActivity.this,activity_agenda.class);
+            }
+        });
     }
 
     public void inicioSesion(TextInputEditText textEmail, TextInputEditText textPass){

@@ -102,13 +102,11 @@
             app:icon="@drawable/register"
             android:textSize="18dp"/>
 
-        <TimePicker
-            android:id="@+id/timePicker"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/buttonDirecto"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/datePicker"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"/>
-             <!-- Por defecto, se establece como invisible -->
+            android:text="Button" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
