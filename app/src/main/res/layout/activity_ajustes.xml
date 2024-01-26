@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_ajustes">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/usuario" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/chipSettings"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tema"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonClaro"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/claro"
+                android:fontFamily="@string/button"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="4dp"/>
+
+            <Button
+                android:id="@+id/buttonDark"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/oscuro"
+                android:fontFamily="@string/button"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="4dp"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/Idiomas"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            >
+
+            <Button
+                android:id="@+id/buttonEspanhol"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|start"
+                android:fontFamily="@string/button"
+                android:text="@string/Espanhol"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="4dp"
+                 />
+
+            <Button
+                android:id="@+id/buttonFrances"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|end"
+                android:fontFamily="@string/button"
+                android:text="@string/francia"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="4dp"
+                 />
+
+            <Button
+                android:id="@+id/buttonIngles"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|start"
+                android:fontFamily="@string/button"
+                android:text="@string/ingles"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="4dp"
+                />
+
+            <Button
+                android:id="@+id/buttonItaliano"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@string/button"
+                android:text="@string/italia"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                app:cornerRadius="4dp" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonCambiarUser"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/cambiarNombre"
+            android:textAlignment="center"
+            app:cornerRadius="4dp"
+            android:textSize="18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@string/button"/>
+
+        <Button
+            android:id="@+id/buttonCambiarPass"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/cambiarPass"
+            android:textAlignment="center"
+            app:cornerRadius="4dp"
+            android:textSize="18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@string/button"/>
+
+    </LinearLayout>
+    <!-- Menú Inferior -->
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        app:dividerColor="@color/colorPrimary"
+        android:backgroundTint="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/chipCal"
+            android:textAlignment="center"
+            app:chipIcon="@drawable/calendario" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="@string/chipHome"
+            android:layout_toRightOf="@id/chip"
+            android:textAlignment="center"
+            app:chipIcon="@drawable/home" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAj"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/chip2"
+            android:text="@string/chipSettings"
+            android:textAlignment="center"
+            app:chipIcon="@drawable/ajuste" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity_calendario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="837dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/usuario" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/chipCal"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="390dp"
+            android:layout_gravity="center"
+            android:calendarTextColor="@color/colorPrimary"
+            android:theme="@style/DatePickerTheme"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFecha"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/fecha"
+                    android:inputType="date"
+                    android:focusable="false"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textHora"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:focusable="false"
+                        android:hint="@string/hora"
+                        android:inputType="time"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textDescripcion"
+                            android:layout_gravity="center"
+                            android:layout_height="50dp"
+                            android:layout_width="350dp"
+                            android:hint="@string/descripcion" />
+
+                        <Button
+                            android:id="@+id/buttonAñadir"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="350dp"
+                            android:layout_gravity="center"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            app:cornerRadius="4dp"
+                            android:text="@string/anhadirEvento" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- Menú Inferior -->
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        app:dividerColor="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/chipCal"
+            android:textAlignment="center"
+            app:chipIcon="@drawable/calendario" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="@string/chipHome"
+            android:layout_toRightOf="@id/chip"
+            android:textAlignment="center"
+            app:chipIcon="@drawable/home" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAj"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/chip2"
+            android:text="@string/chipSettings"
+            android:textAlignment="center"
+            app:chipIcon="@drawable/ajuste" />
+    </RelativeLayout>
+</FrameLayout>

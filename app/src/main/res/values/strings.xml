@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">notas</string>
+    <!-- Página de Registro/Iniciar Sesión -->
+    <string name="registro">Registrarse</string>
+    <string name="meterEmail">Escribe tu Email</string>
+    <string name="meterContrasenha">Escribe tu Contraseña</string>
+    <string name="repetirContrasenha">Repite la Contraseña</string>
+    <string name="tienesContrasenha">¿Tienes una cuenta creada?</string>
+    <string name="nocuenta">¿No tienes una cuenta creada?</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="falloiniciarsesion">Fallo al Iniciar Sesión</string>
+    <string name="falloregistro">Fallo al Registrarse</string>
+    <string name="introducirEmail">Introduce tu Email</string>
+    <string name="repiteContraseña">Repite la contraseña</string>
+    <string name="iniciosesionCorrecto">Inicio de sesión exitoso</string>
+    <string name="registroCorrecto">Registro exitoso</string>
+    <!-- Menú Inferior -->
+    <string name="chipCal">Calendario</string>
+    <string name="chipHome">Inicio</string>
+    <string name="chipSettings">Ajustes</string>
+    <!-- Agenda -->
+    <string name="Agenda">Agenda</string>
+    <string name="recompensas">Recompensas</string>
+    <string name="perfil">Perfil</string>
+    <string name="agendahoy">Agenda de Hoy</string>
+    <!-- Ajustes -->
+    <string name="tema">Tema:</string>
+    <string name="Idiomas">Idiomas:</string>
+    <string name="Espanhol">Español</string>
+    <string name="francia">Francés</string>
+    <string name="italia">Italiano</string>
+    <string name="ingles">Inglés</string>
+    <string name="claro">Claro</string>
+    <string name="oscuro">Oscuro</string>
+    <string name="cambiarNombre">Cambiar Email</string>
+    <string name="cambiarPass">Cambiar Contraseña</string>
+    <!-- custom_dialog -->
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <!-- Calendario -->
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="descripcion">Descripción</string>
+    <string name="anhadirEvento">Añadir Evento</string>
+    <string name="solicitudEnviada">Solicitud enviada correctamente</string>
+    <string name="cambioContrasenha">Contraseña Olvidada</string>
+    <string name="contrasenhaOlvidada">¿No te acuerda la contraseña?</string>
+
+
+</resources>

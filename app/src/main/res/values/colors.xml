@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores para el tema claro -->
+    <color name="colorPrimary">#2F58EA</color>
+    <color name="colorPrimaryDark">#1E2E9E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorFondo">#FFFFFF</color>
+
+    <!-- Colores para el tema oscuro -->
+    <color name="darkColorPrimary">#1E2E9E</color>
+    <color name="darkColorPrimaryDark">#2F58EA</color>
+    <color name="darkColorAccent">#FF4081</color>
+    <color name="darkColorFondo">#000000</color>
+
+    <!-- Otros colores comunes -->
+    <color name="black">#000000</color>
+</resources>

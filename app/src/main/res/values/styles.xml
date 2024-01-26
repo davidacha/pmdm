@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Cambia estos colores según tus preferencias -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <!-- Otros atributos de estilo que desees personalizar -->
+    </style>
+</resources>

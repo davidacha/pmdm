@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">notes</string>
+    <string name="registro">Register</string>
+    <string name="meterEmail">Write your Email</string>
+    <string name="meterContrasenha">Write your Password</string>
+    <string name="repetirContrasenha">Repeat Password</string>
+    <string name="tienesContrasenha">Do you have an account created?</string>
+    <string name="nocuenta">Don\'t have an account created?</string>
+    <string name="login">Log in</string>
+    <string name="iniciosesionCorrecto">Successful Sign In</string>
+    <string name="registroCorrecto">Successful Registration</string>
+    <string name="falloiniciarsesion">Failed to Sign In</string>
+    <string name="falloregistro">Registration Failed</string>
+    <string name="introducirEmail">Enter an Email</string>
+    <string name="repiteContraseña">Repeat the Password</string>
+    <string name="chipCal">Calendar</string>
+    <string name="chipHome">Home</string>
+    <string name="chipSettings">Settings</string>
+    <string name="Agenda">Diary</string>
+    <string name="recompensas">Rewards</string>
+    <string name="perfil">Profile</string>
+    <string name="agendahoy">Today\'s diary</string>
+    <string name="tema">Theme:</string>
+    <string name="Idiomas">Languages:</string>
+    <string name="Espanhol">Spanish</string>
+    <string name="francia">French</string>
+    <string name="italia">Italy</string>
+    <string name="ingles">English</string>
+    <string name="claro">Light</string>
+    <string name="oscuro">Dark</string>
+    <string name="cambiarNombre">Change Email</string>
+    <string name="cambiarPass">Change Password</string>
+    <string name="aceptar">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="fecha">Date</string>
+    <string name="hora">Time</string>
+    <string name="descripcion">Description</string>
+    <string name="anhadirEvento">Add Event</string>
+    <string name="solicitudEnviada">Request sent successfully</string>
+    <string name="cambioContrasenha">Forgot Password</string>
+    <string name="contrasenhaOlvidada">Forgot your password?</string>
+
+</resources>

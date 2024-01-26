@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">note</string>
+    <!-- Pagina di Registrazione/Accesso -->
+    <string name="registro">Registrati</string>
+    <string name="meterEmail">Inserisci la tua email</string>
+    <string name="meterContrasenha">Inserisci la tua password</string>
+    <string name="repetirContrasenha">Ripeti la password</string>
+    <string name="tienesContrasenha">Hai già un account?</string>
+    <string name="nocuenta">Non hai un account?</string>
+    <string name="login">Accesso</string>
+    <string name="falloiniciarsesion">Errore durante l\'Accesso</string>
+    <string name="falloregistro">Registrazione Fallita</string>
+    <string name="introducirEmail">Inserisci un Indirizzo Email</string>
+    <string name="repiteContraseña">Ripeti la Password</string>
+    <string name="iniciosesionCorrecto">Accesso Riuscito</string>
+    <string name="registroCorrecto">Registrazione Riuscita</string>
+    <!-- Menu Inferiore -->
+    <string name="chipCal">Calendario</string>
+    <string name="chipHome">Inizio</string>
+    <string name="chipSettings">Impostazioni</string>
+    <!-- Agenda -->
+    <string name="Agenda">Diario</string>
+    <string name="recompensas">Premi</string>
+    <string name="perfil">Profilo</string>
+    <string name="agendahoy">Diario di Oggi</string>
+    <!-- Impostazioni -->
+    <string name="tema">Tema:</string>
+    <string name="Idiomas">Lingue:</string>
+    <string name="Espanhol">Spagnolo</string>
+    <string name="francia">Francese</string>
+    <string name="italia">Italiano</string>
+    <string name="ingles">Inglese</string>
+    <string name="claro">Chiaro</string>
+    <string name="oscuro">Scuro</string>
+    <string name="cambiarNombre">Cambia Email</string>
+    <string name="cambiarPass">Cambia la password</string>
+    <!-- Calendario -->
+    <string name="aceptar">Accetta</string>
+    <string name="cancelar">Annulla</string>
+    <string name="fecha">Date</string>
+    <string name="hora">Ora</string>
+    <string name="descripcion">Descrizione</string>
+    <string name="anhadirEvento">"Aggiungi Evento "</string>
+    <string name="solicitudEnviada">Richiesta inviata con successo</string>
+    <string name="cambioContrasenha">Password dimenticata</string>
+    <string name="contrasenhaOlvidada">Hai dimenticato la password?</string>
+</resources>
