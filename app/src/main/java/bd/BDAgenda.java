@@ -8,7 +8,7 @@ public class BDAgenda {
     private LocalTime hora;
     private String descripcion;
 
-    public Evento(LocalDate fecha, LocalTime hora, String descripcion) {
+    public BDAgenda(LocalDate fecha, LocalTime hora, String descripcion) {
         this.fecha = fecha;
         this.hora = hora;
         this.descripcion = descripcion;
