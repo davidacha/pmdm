@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 showChangePassDialog();
             }
         });
+
         Button buttonDirecto = findViewById(R.id.buttonDirecto);
         buttonDirecto.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -14,6 +14,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import bd.FirebaseBD;
+
 public class activity_registro extends AppCompatActivity {
 
     static FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
@@ -64,6 +66,7 @@ public class activity_registro extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(activity_registro.this, R.string.registroCorrecto, Toast.LENGTH_SHORT).show();
+                    FirebaseBD.añadirUser();
                     metodos.cambiarActividad(activity_registro.this, activity_agenda.class);
                     finish();
                 }

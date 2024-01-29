@@ -11,14 +11,13 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class FirebaseBD {
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
-    FirebaseAuth firebase = FirebaseAuth.getInstance();
-    private void añadirUser(){
+    static FirebaseFirestore db = FirebaseFirestore.getInstance();
+    static FirebaseAuth firebase = FirebaseAuth.getInstance();
+    public static void añadirUser(){
         Map<String, Object> user = new HashMap<>();
         user.put("Email", firebase.getCurrentUser());
         BDAgenda agenda=new BDAgenda();
