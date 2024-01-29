@@ -45,6 +45,8 @@
     <string name="solicitudEnviada">Solicitud enviada correctamente</string>
     <string name="cambioContrasenha">Contraseña Olvidada</string>
     <string name="contrasenhaOlvidada">¿No te acuerda la contraseña?</string>
+    <string name="cambiarEmailCorrecto">Email cambiado correctamente</string>
+    <string name="cambiarEmailFallo">Error al cambiar Email</string>
 
 
 </resources>

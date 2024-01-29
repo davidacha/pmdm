@@ -134,14 +134,14 @@ public class activity_ajustes extends AppCompatActivity {
     private void updateEmail(String newEmail) {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if (user != null) {
-            user.updateEmail(newEmail)
+            user.verifyBeforeUpdateEmail(newEmail)
                     .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(activity_ajustes.this, "Email cambiado correctamente", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(activity_ajustes.this, R.string.cambiarEmailCorrecto, Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(activity_ajustes.this, "Error al cambiar Email", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(activity_ajustes.this, R.string.cambiarEmailFallo, Toast.LENGTH_SHORT).show();
                                 Exception exception = task.getException();
                             }
                         }
