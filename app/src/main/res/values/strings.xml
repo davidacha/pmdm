@@ -47,6 +47,9 @@
     <string name="contrasenhaOlvidada">¿No te acuerda la contraseña?</string>
     <string name="cambiarEmailCorrecto">Email cambiado correctamente</string>
     <string name="cambiarEmailFallo">Error al cambiar Email</string>
-
+    <string name="cambiarContrasenhaCorrecto">Contraseña cambiada correctamente</string>
+    <string name="cambiarContrasenhaFallo">Error al cambiar contraseña</string>
+    <string name="solicitudContrasenhaCorrecto">Se ha enviado una solicitud para cambiar la contraseña</string>
+    <string name="solicitudContrasenhaFallida">No se ha podido enviar la solicitud</string>
 
 </resources>

@@ -99,13 +99,6 @@ public class activity_ajustes extends AppCompatActivity {
             }
         });
 
-        Button buttonCambiarPass = findViewById(R.id.buttonCambiarPass);
-        buttonCambiarPass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changePassword();
-            }
-        });
     }
 
     private void showChangeEmailDialog() {
@@ -148,13 +141,14 @@ public class activity_ajustes extends AppCompatActivity {
                     });
         }
     }
+
     private void changePassword(){
         String userEmail = firebaseAuth.getCurrentUser().getEmail();
         firebaseAuth.sendPasswordResetEmail(userEmail).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                Toast.makeText(this, "Solicitud enviada correctamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.cambiarContrasenhaCorrecto, Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Fallo al enviar la solicitud", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.cambiarContrasenhaFallo, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -169,14 +163,16 @@ public class activity_ajustes extends AppCompatActivity {
         getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
         recreate();
     }
+
     private void cambiarTema(Boolean tema) {
         if (tema) {
             setTheme(R.style.AppThemeLight);
         } else {
             setTheme(R.style.AppThemeDark);
         }
-        recreate(); // Reinicia la actividad para aplicar el nuevo tema
+        recreate();
     }
+
     private void showToast(String string) {
         Toast.makeText(getApplicationContext(), string, Toast.LENGTH_SHORT).show();
     }

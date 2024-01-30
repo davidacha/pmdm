@@ -54,14 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 showChangePassDialog();
             }
         });
-
-        Button buttonDirecto = findViewById(R.id.buttonDirecto);
-        buttonDirecto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                metodos.cambiarActividad(MainActivity.this,activity_agenda.class);
-            }
-        });
     }
 
     public void inicioSesion(TextInputEditText textEmail, TextInputEditText textPass){
@@ -112,13 +104,15 @@ public class MainActivity extends AppCompatActivity {
                 });
         builder.show();
     }
+
     private void changePassword(String email){
         firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                Toast.makeText(this, "Solicitud enviada correctamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.cambiarContrasenhaCorrecto, Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Fallo al enviar la solicitud", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.cambiarContrasenhaFallo, Toast.LENGTH_SHORT).show();
             }
         });
     }
+
 }
