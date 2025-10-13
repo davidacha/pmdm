@@ -1,6 +1,6 @@
 Agenda-David-Acha
 
-Proyecto de Agenda Personal / Gestor de Contactos y Eventos
+Proyecto de Agenda Personal
 
 Descripción
 
